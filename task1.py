@@ -25,6 +25,7 @@ poem = input('Введите стихотворение: ')
 # for test:
 # poem = 'Серый-зайка-вырвал-травку Положил-её-на-лавку'
 
+
 # 1. Разбиваем поэму на строки
 strings = [x for x in poem.split(' ') if len(x)>0]
 
@@ -32,6 +33,8 @@ strings = [x for x in poem.split(' ') if len(x)>0]
 # Формируем список количества гласных по строкам
 count_vowel_letters = [count_vowel_letters_in_line(s) for s in strings]
 print(f'Количество гласных по строкам: {count_vowel_letters}')
+
+
 
 # Преобразуем список в множество. 
 # Если количество гласных во всех строках одно и то же, 
