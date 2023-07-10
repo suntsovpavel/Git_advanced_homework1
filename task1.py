@@ -11,13 +11,13 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам  
 
-vowel_letters = ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е']
+# vowel_letters =  ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е']
 
 # Эта функция считает количество гласных в строке 
 def count_vowel_letters_in_line(s: str):
     result = 0
     for letter in s:
-        if letter in vowel_letters:
+        if letter in ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е']:
             result += 1
     return result
 
